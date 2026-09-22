@@ -1,0 +1,18 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.example.mydesktopapp
+productName: duckDB
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+      - package.json
+win:
+  signExecutable: false
+  signAndEditExecutable: false
+  target:
+    - target: dir
+      arch:
+        - x64
+electronVersion: 38.8.6
